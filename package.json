@@ -1,11 +1,13 @@
 {
   "name": "bartenderdemo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha tests",
+    "coverage":"nyc npm test"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,6 +15,19 @@
     "chai": "^4.3.6",
     "chai-http": "^4.3.0",
     "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "mongoose": "^6.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alee188/bartenderAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alee188/bartenderAPI/issues"
+  },
+  "homepage": "https://github.com/alee188/bartenderAPI#readme",
+  "description": "",
+  "devDependencies": {
+    "nyc": "^15.1.0"
   }
 }
